@@ -38,7 +38,7 @@ pageNav.nav = function(p, pn) {
         p = 1;
     } else {
         //非第一页
-        re += this.pHtml(p - 1, pn, "&lt;上一页");
+        re += this.pHtml(p - 1, pn, "&nbsp;", "QueryPage--prev");  // &lt;上一页
         //总是显示第一页页码
         re += this.pHtml(1, pn, "1");
     }
@@ -69,12 +69,12 @@ pageNav.nav = function(p, pn) {
         re += this.pHtml(pn, pn);
     };
     if (p < pn) {
-        re += this.pHtml(p + 1, pn, "下一页&gt;");
+        re += this.pHtml(p + 1, pn, "&nbsp;", "QueryPage--next");  // 下一页&gt;
     };
     return re;
 };
 //显示非当前页
-pageNav.pHtml = function(pageNo, pn, showPageNo) {
+pageNav.pHtml = function(pageNo, pn, showPageNo, cls) {
     showPageNo = showPageNo || pageNo;
     var H = " <a href='javascript:pageNav.go(" + pageNo + "," + pn + ");' class='pageNum'>" + showPageNo + "</a> ";
     return H;
@@ -82,7 +82,7 @@ pageNav.pHtml = function(pageNo, pn, showPageNo) {
 };
 //显示当前页
 pageNav.pHtml2 = function(pageNo) {
-    var H = " <b>" + pageNo + "</b> ";
+    var H = " <span class='is-current'>" + pageNo + "</span> ";
     return H;
 };
 //输出页码,可根据需要重写此方法
