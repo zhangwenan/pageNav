@@ -17,6 +17,7 @@
  //初始跳到第3页,共33页
  pageNav.go(3,33);
 
+
  */
 var pageNav = pageNav || {};
 pageNav.fn = null;
