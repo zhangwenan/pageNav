@@ -1,0 +1,25 @@
+{
+  "name": "page-nav",
+  "homepage": "https://github.com/zhangwenan/pageNav",
+  "authors": [
+    "zhangwenan <jquerytech@gmail.com>"
+  ],
+  "description": "",
+  "main": "page.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "zhangwenan",
+    "maihaoche",
+    "pageNav"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

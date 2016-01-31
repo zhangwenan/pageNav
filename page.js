@@ -1,7 +1,7 @@
 /*
  **************************
  author:zhangwenan (jquerytech@gmail.com)
- 
+
  **************************
 
  页码显示jquery插件,只需要存在#pageNav,则会在其中显示页码.
